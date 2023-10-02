@@ -1,0 +1,187 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(127, 67, 217);
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+    background-image: url("hi.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(144, 150, 217);
+    padding: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(160, 15, 15, 0.3);
+    border-radius: 20px;
+    font-style: oblique;
+    opacity: 0.8;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 2;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #97ed82;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30068;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3df2f2;
+    margin: 15px 0;
+    font-weight: bold;
+    border-radius: 5px;
+
+
+}
+
+button.edit {
+    background-color: #d71d9f;
+    border-radius: 10PX;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+button.delete {
+    background-color: #bd1526;
+    border-radius: 5px;
+}
+
+
+button.delete {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+button.edit:hover,
+button.delete:hover {
+    filter: brightness(90%);
+}
+
+.title {
+    border-radius: 10px;
+    background-color: #efe4e4;
+    padding: 0;
+
+}
+
+.add {
+    color: black;
+    font-weight: bold;
+}
+
+.myform {
+    border-radius: 5px;
+    border-color: #00b3ff;
+}
+
+/*------------------------------------------------------------- */
+
+
+
+
+
+
+.square {
+    width: 10rem;
+    height: 10rem;
+    background-color: pink;
+    position: relative;
+    transform: rotate(45deg);
+    animation: beater 3s linear infinite;
+    position: relative;
+    left: 60px;
+    top: -190px;
+
+}
+
+.square::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    animation: beater 3s linear infinite;
+}
+
+.square::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    animation: beater 3s linear infinite;
+}
+
+/* Define the keyframes for the animation */
+@keyframes beater {
+    0% {
+        background: red;
+    }
+
+    15% {
+        background: orange;
+    }
+
+    30% {
+        transform: scale(0.5);
+        background: yellow;
+    }
+
+    45% {
+        background: greenyellow;
+    }
+
+    60% {
+        background: blue;
+    }
+
+    75% {
+        background: indigo;
+    }
+
+    100% {
+        background: violet;
+    }
+}
